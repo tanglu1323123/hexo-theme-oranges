@@ -1,4 +1,4 @@
-# 相关配置说明
+  # 相关配置说明
   # favicon: 网站图标
   # avatar: 主题用户头像与昵称
   # rss: rss订阅
@@ -21,13 +21,13 @@
 # 网站图标
 favicon:
   enable: true
-  icon: /images/favicon.png
-  touch_icon: /images/favicon.png
+  icon: https://img.tanglu.me/image.webp
+  touch_icon: https://img.tanglu.me/image.webp
 
 # 用户头像与昵称
 avatar:
-  author_photo: /images/avatar.png
-  author_nickname: Oranges
+  author_photo: https://img.tanglu.me/image.webp
+  author_nickname: tanglu
   path: /
 
 # Google 分析
@@ -35,8 +35,8 @@ avatar:
 # 注册Google分析账号，在管理/创建媒体资源/选择网站/填写相关信息后得到跟踪Id，一般格式为UA-xxxxxxx-x
 # 如之前已有注册账号，在管理/跟踪信息/跟踪代码/找到跟踪ID，一般格式为UA-xxxxxxx-x
 gtag:
-  enable: false
-  gtagkey: UA-xxxxxxx-x
+  enable: true
+  gtagkey: G-X8CHQT28KM
 
 # 文章评论系统
 comments:
@@ -58,11 +58,12 @@ comments:
     # https://valine.js.org/quickstart.html#%E8%8E%B7%E5%8F%96APP-ID-%E5%92%8C-APP-Key
     # 进入以上网址查看官方教程
     enable: false
-    appId:
-    appKey:
-    placeholder: Welcome!
+    appId: FP5iDHnhAB22BwHHA109y2Sg-MdYXbMMI
+    appKey: T2bVelavTppevO939KvvxbYO
+    placeholder: Welcome
     avatar: retro
     vempty_display: false
+    serverURLs: https://fp5idhnh.api.lncldglobal.com
 
   # disqus 需科学上网方可使用
   disqus:
@@ -74,19 +75,21 @@ comments:
   
   # waline https://waline.js.org
   waline:
-    enable: false
-    serverURL:
+    enable: true
+    serverURL: https://waline.tanglu.me
+
+
 
 # 主题页面导航栏
 navbar:
   -
-    name: Home
+    name: 主页
     enable: true
     path: /
     key: home
   -
     name: Archives
-    enable: true
+    enable: false
     path: /archives/
     key: archives
   -
@@ -95,17 +98,23 @@ navbar:
     path: /categories/
     key: categories
   -
-    name: Tags
+    name: 标签
     enable: true
     path: /tags/
     key: tags
+
   -
-    name: Friends
+    name: 事件
+    enable: true
+    path: /incidents/
+    key: incidents
+  -
+    name: 友链
     enable: true
     path: /friends/
     key: friends
   -
-    name: About
+    name: 关于我
     enable: true
     path: /about/
     key: about
@@ -124,13 +133,130 @@ friends:
   # site: 地址
   # meta: 描述
   -
-    nickname: Zcheng
-    site: https://zcheng.site/
-    meta:
+    nickname: hostloc
+    site: https://hostloc.com
+    meta: 全球主机交流论坛
   -
-    nickname: Hexo
-    site: https://hexo.io/
-    meta:
+    nickname: nodeseek
+    site: https://nodeseek.com
+    meta: 喜欢Web开发，托管，vps /服务器和其他极客事物的人们的地方
+  -
+    nickname: v2ex
+    site: https://v2ex.com
+    meta: 创意工作者的社区。讨论编程、设计、硬件、游戏等令人激动的话题
+  -
+    nickname: LET
+    site: https://lowendtalk.com
+    meta: 国外主机交流
+  -
+    nickname: P3TERX
+    site: https://p3terx.com
+    meta: 目前主要分享站长个人在泛 IT 技术类知识中的学习与研究成果，多数为高质量原创教程类和科普类文章
+  -
+    nickname: 我不是咕咕鸽
+    site: https://blog.laoda.de
+    meta: 服务器折腾不完全指南，定期分享一些好玩的东西，不定期记录生活
+  -
+    nickname: Luminous
+    site: https://luotianyi.vc
+    meta: 记录生活中的点滴，留下回忆与怀恋
+  -
+    nickname: Rats
+    site: https://www.moerats.com
+    meta: 主要以VPS教程、程序搭建、脚本和资源分享为主
+  -
+    nickname: 阮一峰的网络日志
+    site: https://www.ruanyifeng.com/blog/
+    meta: 这里记录每周值得分享的科技内容，周五发布
+  -
+    nickname: Bajins
+    site: https://www.bajins.com
+    meta: 
+  -
+    nickname: Xhofe
+    site: https://nn.ci
+    meta: 开源项目alist的作者
+  -
+    nickname: 不死鸟
+    site: https://iui.su
+    meta: 每日分享
+  -
+    nickname: 庭说
+    site: https://tingtalk.me
+    meta: 
+  -
+    nickname: Suncle
+    site: https://suncle.me
+    meta: 
+  -
+    nickname: 猫猫博客
+    site: https://catcat.blog
+    meta: 
+  -
+    nickname: 秋水逸冰
+    site: https://teddysun.com
+    meta: 
+  -
+    nickname: 小小博客
+    site: https://shagain.club
+    meta: 
+  -
+    nickname: 肉肉的小宇宙
+    site: https://rou.best
+    meta: 
+  -
+    nickname: imazes
+    site: https://kms.app
+    meta: 
+  -
+    nickname: Hogwarts
+    site: https://winamp.top
+    meta: 
+  -
+    nickname: SunPma
+    site: https://sunpma.com
+    meta: 
+  -
+    nickname: 周先生
+    site: https://mrchou.com
+    meta: 
+  -
+    nickname: Hyper Tech
+    site: https://haogeboke.com
+    meta: 
+  -
+    nickname: 郭泽宇
+    site: https://www.guozeyu.com
+    meta: 发布的内容汇集以科技、摄影为主的原创精选文章、视频、图片、短文和 App 推荐
+  -
+    nickname: 代码如诗
+    site: https://dgideas.net
+    meta: 
+  -
+    nickname: MOE
+    site: https://www.moe.ms
+    meta: 一个Linux爱好者，平时捣腾Linux中所遇到的问题记录在此
+  -
+    nickname: 回声
+    site: https://iecho.cc
+    meta: 
+  -
+    nickname: 娃娃Code
+    site: https://blog.dollcode.cn
+    meta: 
+  -
+    nickname: Closure
+    site: https://closure01.dev
+    meta: 
+  -
+    nickname: bb的博客
+    site: https://csicn.cn
+    meta: 
+  -
+    nickname: 待添加...
+    site: 
+    meta: 
+
 
 # 页脚信息
 footer:
@@ -142,10 +268,10 @@ footer:
     # path: 地址
 
     # 按需取消注释以启用
-    -
-      name: github
-      icon: github
-      path: https://github.com/zchengsite/hexo-theme-oranges
+
+      # name: github
+      # icon: github
+      # path: https://github.com/zchengsite/hexo-theme-oranges
     # -
     #   name: email
     #   icon: envelope
@@ -166,20 +292,19 @@ footer:
     #   name: weibo
     #   icon: weibo
     #   path:
-    # -
+
     #   # rss需安装 hexo-generator-feed 插件
     #   # 具体参照https://github.com/hexojs/hexo-generator-feed
-    #   name: rss
-    #   icon: rss
-    #   path: /atom.xml
+    -
+      name: rss
+      icon: rss
+      path: /atom.xml
 
   more:
     # 支持变量显示，可自定义扩展，具体见主题/layout/_partial/footer.ejs
     # 一般用来显示根据各种场景需要切换的文本，如时间年份
     # 如：{thisYear} 会被替换为今年年份
-    -
-      name: Copyright © {thisYear} Oranges
-      path: https://github.com/zchengsite/hexo-theme-oranges
+
     -
       name: Theme by Oranges | Powered by Hexo
       path: https://github.com/zchengsite/hexo-theme-oranges
@@ -187,24 +312,25 @@ footer:
   # 浏览量统计
   # http://busuanzi.ibruce.info/
   views:
-    enable: false
+    enable: true
     provider: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js'
     item:
       -
-        enable: true
+        enable: false
         id: busuanzi_value_site_pv
         name: 本站总访问量
         unit: 次
       -
         enable: true
-        id: busuanzi_value_page_pv
-        name: 本文总阅读量
-        unit: 次
+        id: busuanzi_value_site_uv
+        name: 
+        unit: 访客
       -
         enable: true
-        id: busuanzi_value_site_uv
-        name: 本站访客数
-        unit: 人
+        id: busuanzi_value_page_pv
+        name: 
+        unit: 阅读
+
 
 # 文章搜索
 search:
@@ -229,7 +355,7 @@ postShare:
 codeBlock:
   # 代码块风格，默认normal
   # 可选：默认风格'normal'；mac黑色风格：'mac-black'
-  style: 'normal'
+  style: 'mac-black'
   # 代码复制
   copy:
     enable: true
@@ -276,8 +402,8 @@ cdns:
       url: https://cdn.jsdelivr.net/npm/valine@1.4.18/dist/Valine.min.js
 
     waline:
-      enable: false
-      url: https://cdn.jsdelivr.net/npm/@waline/client@2.5.1/dist/legacy.min.js
-
-# 主题色
+      enable: true
+      url: 
+        css: https://npm.elemecdn.com/@waline/client@2.15.5/dist/waline.css
+        js: https://npm.elemecdn.com/@waline/client@2.15.5/dist/waline.mjs
 themeColor: '#808080'
